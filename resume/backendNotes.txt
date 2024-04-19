@@ -1,0 +1,21 @@
+1. Initially we need to create a project folder for backend.
+2. create one file(mostly name as "app.js"/server.js/ index.js(rarely)).
+** In teminal window,
+        cd <projectfolderName>
+        npm init    (initializing)
+        <enter>
+        <enter> to fill all project details.
+    Ex: package name: (backend)
+    version: (1.0.0)
+    git repository:
+    keywords:
+    author:
+    license: (ISC)
+    About to write to D:\FSD\fsdCodes\backend\package.json:  
+
+** If we need to change any details means, we can change in package.json file.
+**We need 2things to run mongodB,
+        1. Express
+        2. Mongoose
+
+        gfidsipfop

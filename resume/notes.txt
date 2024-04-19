@@ -1,0 +1,6 @@
+%%%%%%%%%%%%**Netlify.com(Code Deploying)**%%%%%%%%%%%%%
+## First, we need to check our react app is running without errors. 
+## In terminal, npm run build.... build folder will be created in our app. Inside this build folder, we can see css, js & html files seperately(as react app has jsx(html & js)format).
+## after build, if there is any changes we made to code, again we need to run the npm run build to get the same changes into the build folder.
+## Log into Netlify.com, deploy again, upload build folder, will get a link of our code output.
+##
