@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 mongoose.connect(
-    "mongodb+srv://gowthamilakshmipathyk:gowthamip@cluster0.hlpgf31.mongodb.net/?retryWrites=true&w=majority",
+    "mongodb+srv://gowthamilakshmipathyk:Gowthu408@cluster0.hlpgf31.mongodb.net/?retryWrites=true&w=majority",
 //    "mongodb+srv://ranisheebha:Its123@cluster0.d4u9mqj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
 //"mongodb+srv://javvadirakesh:SpikyRakesh@cluster0.4nphiri.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     {
