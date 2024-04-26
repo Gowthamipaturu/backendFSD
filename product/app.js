@@ -15,7 +15,8 @@ app.use(bodyParser.json());
 mongoose
   .connect(
    // "mongodb+srv://gowthamilakshmipathyk:gowthamip@cluster0.hlpgf31.mongodb.net/?retryWrites=true&w=majority",
-   "mongodb+srv://ranisheebha:Its123@cluster0.d4u9mqj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+   //"mongodb+srv://ranisheebha:Its123@cluster0.d4u9mqj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+   
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -53,6 +54,9 @@ app.post("/todos", async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 });
+
+
+
 
 // GET route to fetch all Todos
 app.get("/todos", async (req, res) => {
