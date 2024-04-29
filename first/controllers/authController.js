@@ -13,11 +13,9 @@ const signup = async (req, res) => {
     // Check if the username already exists
     const existingUser = await User.findOne({ username });
     console.log(existingUser);
-
     if (existingUser) {
       return res.status(400).json({ error: "Username already exists" });
     }
-
     const existingemail = await User.findOne({ email });
     console.log(existingemail);
     if (existingemail) {
@@ -74,7 +72,7 @@ const login = async (req, res) => {
     if (!matchedPassword) {
       return res.status(401).json({ error: "Invalid credential" });
     }
-    const token = jwt.sign({ userId: user[0]._id }, "This is my jwtSecret code", {
+    const token = jwt.sign({ userId: user._id }, "This is my jwtSecret code", {
       expiresIn: "1h", // Token expires in 1 hour (adjust as needed)
     });
 
@@ -85,4 +83,4 @@ const login = async (req, res) => {
   }
 };
 
-module.exports = { signup, login };
+module.exports = {signup, login};
